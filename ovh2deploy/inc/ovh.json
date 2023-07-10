@@ -1,0 +1,137 @@
+{
+  "titre": "Menu OVH ☁️☁️☁️",
+  "commentaire": "2021 ©️ by Folenski",
+  "menu": [
+    {
+      "titre": "✔️ Déploiement ",
+      "souligner": true,
+      "commentaire": "Déployer sur OVH",
+      "menu": [
+        {
+          "titre": " www.daldomarte.com",
+          "commentaire": "daldo prod",
+          "commande": "${OVH_BIN}/do_ovh.sh put prd daldo"
+        },
+        {
+          "titre": " www.carracedo.space",
+          "commentaire": "carracedo prod",
+          "commande": "${OVH_BIN}/do_ovh.sh put prd carracedo"
+        },
+        {
+          "titre": " www.staff-kiev.com",
+          "commentaire": "staff prod",
+          "commande": "${OVH_BIN}/do_ovh.sh put prd staff"
+        },
+        {
+          "titre": " www.repetitor-kiev.com",
+          "commentaire": "repetitor prod",
+          "commande": "${OVH_BIN}/do_ovh.sh put prd repetitor"
+        },
+        {
+          "titre": " www.test.faitacuba.com",
+          "commentaire": "faitacuba test",
+          "commande": "${OVH_BIN}/do_ovh.sh put test cuba"
+        },
+        {
+          "titre": " www.test.daldomarte.com",
+          "commentaire": "daldo test",
+          "commande": "${OVH_BIN}/do_ovh.sh put test daldo"
+        },
+        {
+          "titre": " www.test.carracedo.space",
+          "commentaire": "carracedo test",
+          "commande": "${OVH_BIN}/do_ovh.sh put test carracedo"
+        },
+        {
+          "titre": " www.test.staff-kiev.com",
+          "commentaire": "staff test",
+          "commande": "${OVH_BIN}/do_ovh.sh put test staff"
+        },
+        {
+          "titre": " www.test.repetitor-kiev.com",
+          "commentaire": "repetitor test",
+          "commande": "${OVH_BIN}/do_ovh.sh put test repetitor"
+        }
+      ]
+    },
+    {
+      "titre": "⏬ Sauvegarde ",
+      "souligner": true,
+      "commentaire": "Sites présents sur OVH ( prod ou test )",
+      "menu": [
+        {
+          "titre": " www.daldomarte.com",
+          "commentaire": "daldo prod",
+          "commande": "${OVH_BIN}/do_ovh.sh save prd daldo"
+        },
+        {
+          "titre": " www.carracedo.space",
+          "commentaire": "carracedo prod",
+          "commande": "${OVH_BIN}/do_ovh.sh save prd carracedo"
+        },
+        {
+          "titre": " www.staff-kiev.com",
+          "commentaire": "staff prod",
+          "commande": "${OVH_BIN}/do_ovh.sh save prd staff"
+        },
+        {
+          "titre": " www.test.daldomarte.com",
+          "commentaire": "daldo test",
+          "commande": "${OVH_BIN}/do_ovh.sh save test daldo"
+        },
+        {
+          "titre": " www.test.carracedo.space",
+          "commentaire": "carracedo test",
+          "commande": "${OVH_BIN}/do_ovh.sh test carracedo"
+        },
+        {
+          "titre": " www.test.staff-kiev.com",
+          "commentaire": "staff test",
+          "commande": "${OVH_BIN}/do_ovh.sh test staff"
+        },
+        {
+          "titre": " www.test.repetitor-kiev.com", 
+          "commentaire": "repetitor test",
+          "commande": "${OVH_BIN}/do_ovh.sh save test repetitor"
+        }
+      ]
+    },
+    {
+      "titre": "⏫ Restauration",
+      "souligner": true,
+      "commentaire": "Sites présents sur OVH ( prod ou test )",
+      "menu": [
+        {
+          "titre": " www.daldomarte.com",
+          "commentaire": "daldo prod",
+          "commande": "${OVH_BIN}/do_ovh.sh restore prd daldo"
+        },
+        {
+          "titre": " www.carracedo.space",
+          "commentaire": "carracedo prod",
+          "commande": "${OVH_BIN}/do_ovh.sh restore prd carracedo"
+        },
+        {
+          "titre": " www.staff-kiev.com",
+          "commentaire": "staff prod",
+          "commande": "${OVH_BIN}/do_ovh.sh restore prd staff"
+        },
+        {
+          "titre": " www.test.daldomarte.com",
+          "commentaire": "daldo test",
+          "commande": "${OVH_BIN}/do_ovh.sh restore test daldo"
+        },
+        {
+          "titre": " www.test.carracedo.space",
+          "commentaire": "carracedo test",
+          "commande": "${OVH_BIN}/do_ovh.sh restore test carracedo"
+        },
+        {
+          "titre": " www.test.staff-kiev.com",
+          "commentaire": "staff test",
+          "commande": "${OVH_BIN}/do_ovh.sh restore test staff"
+        }
+      ]
+    }
+  ]
+}

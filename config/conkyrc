@@ -1,0 +1,53 @@
+conky.config = {
+  background = true,
+    own_window = true,
+    own_window_class = 'Conky',
+    own_window_transparent = true,
+    own_window_type = 'normal',
+    own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+    own_window_argb_visual = true,
+    own_window_argb_value = 0,
+    double_buffer = true,
+    no_buffers = true,
+    use_spacer = 'none',
+    use_xft = true,
+    xftalpha = 1,
+    font = 'Noto Mono:size=14',
+    update_interval = 10,
+    uppercase = false,
+    override_utf8_locale = true,
+    stippled_borders = 1,
+    border_width = 5,
+    draw_borders = false,
+    draw_graph_borders = true,
+    draw_outline = false,
+    draw_shades = false,
+    show_graph_scale = true,
+    show_graph_range = true,
+    alignment = 'buttom_left',
+    gap_x = 10,
+    gap_y = 10,
+    net_avg_samples = 1,
+    cpu_avg_samples = 6,
+    short_units = true,
+    pad_percents = 2,
+    text_buffer_size = 2048,
+    out_to_console = false,
+    out_to_stderr = false,
+    extra_newline = false,
+}
+conky.text = [[
+${color white}${font Noto Mono:size=20}>>>> $nodename ${font Noto Mono:size=14}
+$hr
+${color cyan}${execi 86400 lsb_release -si} ${execi 86400 lsb_release -sr}  $sysname $kernel $machine 
+${color white}Uptime      : ${color cyan}$uptime
+${color yellow}$hr 
+${color white}RAM         : ${color cyan}${membar 5,100 } $mem/$memmax
+${color white}Disque dur  : ${color cyan}${fs_bar 5,100 /} ${fs_used /}/${fs_size /} 
+${color white}Verif FS    : ${color cyan}${texeci 600 ~/dotfiles/scripts/disque.sh}
+${color yellow}$hr
+${color white}addr wlp2s0 : ${color cyan}${addr wlp2s0}
+${color white}adresse pub : ${color cyan}${texeci 600 ~/dotfiles/scripts/adresse_pub.sh}
+${color white}vpn         : ${color cyan}${texeci 600 ~/dotfiles/scripts/status_vpn.sh 2>/dev/null}
+${color yellow}$hr
+]]
